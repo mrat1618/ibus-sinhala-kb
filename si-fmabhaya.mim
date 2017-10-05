@@ -1,0 +1,211 @@
+;;; <li> si-fmabhaya.mim
+;;;
+;;; Input method for FM Abhaya transliteration using the Wijeyasekara scheme.
+
+;; code by Madhuranga Rathnayake, VISION@Uok (http://visionuok.org)
+;; mail.pvgm@gmail.com
+
+(input-method t si-fmabhaya)
+
+(description "FMAbhaya quick correction method v.1.0.beta. 2012, by Madhuranga Rathnayake")
+(author "Madhuranga Rathnayake")
+(title "si-fmabhaya")
+
+(map
+(trans
+
+;; upper numbers set
+("`" ?%)
+("~" ?_)
+("!" ?æ)
+("@" ?”)
+("#" ?”)
+("$" ?”)
+("%" ?])
+("^" ?”)
+("&" ?”)
+("*" ?))  
+("(" ?^)
+(")" ?&)
+
+("-" ?-)
+("_" ?¤)
+("=" ?})
+("+" ?¬)
+
+("]" ?¦)
+("}" ?()
+
+("/" ?$)
+("?" ?@)
+
+;; other single corrections
+
+("X" ?X)
+("J" ?®)
+
+;; hal,ispili,paapili correction
+("s" ?s)
+("S" ?S)
+("q" ?q)
+("Q" ?Q)
+("e" ?e)
+("E" ?E)
+("z" ?z)
+("Z" ?Z)
+("a" ?a)
+("A" ?A)
+("'" ?')
+("d" ?d)
+("D" ?D)
+
+;; non changing characters
+("B" ?B)
+("b" ?b)
+("C" ?C)
+("H" ?H)
+("h" ?h)
+("M" ?M)
+("m" ?m)
+("N" ?N)
+("W" ?W)
+("w" ?w)
+("<" ?<)
+(">" ?>)
+("K" ?K)
+("k" ?k)
+("Y" ?Y)
+("y" ?y)
+("I" ?I)
+("i" ?i)
+("f" ?f)
+
+;; hal,ispili,papili correction plus replacement
+
+("rq" "re")
+("rQ" "rE")
+("re" "/")
+("rE" "?")
+("rs" "ß")
+("rS" "Í")
+("ra" "¾")
+
+("Ta" "´")
+
+("ua" "ï")
+("us" "ñ")
+("uS" "ó")
+
+("Us" "ô")
+("Ua" "ò")
+
+("os" "È")
+("oS" "§")
+("oq" "ÿ")
+("oQ" "¥")
+("o`" "ø")
+
+("Oa" "è")
+("Os" "ê")
+("OS" "ë")
+
+("pa" "É")
+("ps" "Ñ")
+("pS" "Ö")
+
+("ga" "Ü")
+("gs" "á")
+("gS" "à")
+
+("Gs" "À")
+("GS" "Á")
+
+("ja" "õ")
+("js" "ú")
+("jS" "ù")
+
+("lq" "l=")
+("lQ" "l+")
+
+("La" "Ä")
+("Ls" "Å")
+("LS" "Ç")
+
+(";q" ";=")
+(";Q" ";+")
+
+(":s" "Ó")
+(":S" "Ò")
+
+("Xa" "Ù")
+
+("ca" "Ê")
+("cs" "ð")
+("cS" "Ô")
+
+("va" "â")
+("vs" "ä")
+("vS" "ã")
+
+("Vs" "Î")
+("VS" "Ð")
+
+("na" "í")
+("ns" "ì")
+("nS" "î")
+
+("Nq" "N=")
+("NQ" "N+")
+
+("Ms" "Ý")
+("MS" "Ú")
+
+(",q" "¨")
+(",Q" "Æ")
+
+(".q" ".=")
+(".Q" ".+")
+
+;; sanchaka
+
+("o/" "|")
+("o/s" "¢")
+("o/S" "£")
+("o/q" "÷")
+("o/Q" "ª")
+("oa/" "|a")
+("oq/" "÷")
+("oQ/" "ª")
+
+("./" "Õ")
+("./q" "Õ=")
+("./Q" "Õ+")
+
+("v/" "~")
+("v/a" "å")
+("v/s" "ç")
+("v/S" "é")
+("va/" "å")
+("vs/" "ç")
+("vS/" "é")
+
+;; other
+
+("Ks" "‚")
+("K~" "“")
+
+("H~" "œ")
+
+("ca" "þ")
+("cs" "ý")
+("cS" "Â")
+
+;; most importantly the space
+(" " " ")
+
+))
+
+(state
+(init
+(trans))) 
+
